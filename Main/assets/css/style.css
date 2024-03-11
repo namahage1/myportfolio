@@ -36,7 +36,7 @@ h4,
 h5,
 h6 {
   margin-bottom: 0.625rem;
-  color: var(--heliotrope);
+  color: var(--gin);
   font-weight: 700;
   line-height: 1.1;
 }
@@ -68,6 +68,13 @@ h6 {
 
 p {
   margin-bottom: 1rem;
+}
+
+.b {
+  list-style-type: square;
+}
+.thick {
+  font-weight: bold;
 }
 
 code {
@@ -136,6 +143,7 @@ footer {
   outline-offset: -2px;
   transition: all 0.5s ease-in-out;
 }
+
 
 .code-card .card-header {
   /* use position and negative margins to move title of card over the card's outline and create an overlap effect */
@@ -210,10 +218,10 @@ footer {
   }
   img {
     border-radius: 50%;
-    margin-left: auto;
+    margin-left:30%;
     margin-right: auto;
-    max-height: inherit;
-    max-width: 100%;
-    object-fit: contain;
+    max-height: 200px;
+    max-width: inherit;
+    object-fit: cover;
   }
 }
