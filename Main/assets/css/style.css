@@ -3,7 +3,9 @@
   --outer-space: #33393f;
   --bright-turquoise: #2aefcb;
   --gin: #e0eae4;
-  --heliotrope: #e866ec;
+  --gray: #688a8a;
+  --heliotrope: #b5cbf9;
+  --grin:rgb(131, 163, 119);
 }
 
 /* set content highlight color and background */
@@ -28,7 +30,7 @@ body {
   color: var(--gin);
   background-color: var(--outer-space);
 }
-
+a,
 h1,
 h2,
 h3,
@@ -36,7 +38,7 @@ h4,
 h5,
 h6 {
   margin-bottom: 0.625rem;
-  color: var(--gin);
+  color: var(--grin);
   font-weight: 700;
   line-height: 1.1;
 }
@@ -48,6 +50,8 @@ h1 {
 
 h2 {
   font-size: 3.5rem;
+  text-align: center;
+
 }
 
 h3 {
@@ -70,12 +74,7 @@ p {
   margin-bottom: 1rem;
 }
 
-.b {
-  list-style-type: square;
-}
-.thick {
-  font-weight: bold;
-}
+
 
 code {
   /* Monospace font stack is used for our code blocks to make it look more like code */
@@ -160,8 +159,8 @@ footer {
 /* set an outer and inner drop shadow on the card to create a glowing effect on hover */
 .code-card:hover,
 .code-card:hover .card-header {
-  box-shadow: 3px 3px red inset,
-  -1em 0 0.4em olive;
+  box-shadow: 3px 3px rgb(155, 231, 170) inset,
+  -1em 0 0.4em rgb(72, 72, 2);
   /*inset 0px 0px 8px var(--heliotrope), 0 0 15px var(--heliotrope);*/
 }
 
@@ -180,8 +179,8 @@ footer {
   border-radius: 8px;
   /* use linear-gradient() function to create a fading background  */
   background-image: linear-gradient(
-    rgba(232, 102, 236, 0.3) 0%,
-    rgba(232, 102, 236, 0.6) 100%
+    rgba(106, 102, 236, 0.3) 0%,
+    rgba(85, 241, 160, 0.6) 100%
   );
   display: flex;
   align-items: center;
