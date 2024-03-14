@@ -5,12 +5,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Shelly's portofolio</title>
-  <link rel="stylesheet" href="assets/css/reset.css" />
   <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
 
 <body>
-
   <header>
     <h1 class="page-title">
       My Portfolio
@@ -21,82 +19,51 @@
   </header>
 
   <main>
+    <div class="flex-container">
+    <div class="content-column"><a href="#aboutme">About Me</a></div>
+    <div class="content-column"><a href="#myworks">My Works</a></div>
+    <div class="content-column"><a href="#contactme">Contact Me</a></div>
+  </div>
 
-    <section class="row justify-center">
-      <div class="card-column">
-        <figure class="card code-card">
-          <h2 class="card-header"><a href="#aboutme">About Me</a></h2></h2>
-          <div class="card-body">
-            <img  src="../Images/mypic.jpg" alt="me with Tatum">
-          </div>
-          <!-- with the <pre> element, it counts all spaces literally, so proper code indentation cannot be applied in this case -->
-          <pre class="code-block"><code><h4>Shelly Akiyama</h4></code></pre>
-        </figure>
-      </div>
-      
-      <div class="card-column">
-        <figure class="card code-card">
-          <h2 class="card-header"><a href="#works">Work</a></h2>
-          <div class="card-body">
-            <p></p>
-          </div>
-          <pre class="code-block"><code></code></pre>
-        </figure>
-      </div>
 
-      <div class="card-column">
-        <figure class="card code-card">
-          <h2 class="card-header"><a href="#contact">My Contact</a></h2>
-          <div class="card-body">
-            <p></p>
-          </div>
-          <pre class="code-block"><code></code></pre>
-        </figure>
-      </div>
-    </section>
-      <div>
-        <figure class="card code-card"><!--i want to add 4 columns here-->
-          
-          <div class="card-body">
-            <pre class="code-block"><code><h4>Work 1</h4></code></pre>
-          </div>
-          <div class="card-body">
-            <pre class="code-block"><code><h4>Work 2</h4></code></pre>
-          </div>
-          <div class="card-body">
-            <pre class="code-block"><code><h4>Work 3</h4></code></pre>
-          </div>
-          <div class="card-body">
-            <pre class="code-block"><code><h4>Work 4</h4></code></pre>
-          </div>
-         
-          <div>
-          <p></p></div>
-
-          <div  id="works" class="code-block">
-            <code>
- 
-          </code>
+    <section class="flex-container">
+      <div class="content-row">
+        <div class="content-column" id="aboutme">
+        <h3>About Me</h3>
+        <img src="../Images/mypic.JPG" alt="Me and Tatum" id="profile-img">
+        <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident explicabo, enim cum aliquam odit, quis labore tenetur, assumenda iste voluptatum quod? Sed aliquam minima maxime doloribus hic modi, illo quis?</h5>
+        
         </div>
-        </figure>
-      </div>
-     
-        <figure class="card code-card">
-
-          <div class="card-body" id="aboutme">
-            <p></p>
+        <div>
+        <h3>My Works</h3>
+          <div class='content-row'>
+           
+            <div class='content-column' id="myworks">
+                
+                <a href="work1.html"><img src="../Images/background1.jpg" class="thumbnail work-img" alt="My Work 1" ></a>
+              
+            </div>
+            <div class='content-column'>
+              <a href="work2.html">
+                <img src="../Images/background2.jpg" alt="My Work 2"class="thumbnail work-img">
+              </a>
+            </div>
+            <div class='content-column'>
+              <a href="work3.html">
+                <img src="../Images/background3.jpg" alt="My Work 3"class="thumbnail work-img">
+              </a>
+            </div>
           </div>
-          <pre class="code-block"><code>About me here</code></pre>
-        </figure>
-     
-
-      <figure class="card code-card">
-        <div id="contact" class="card-body">
-          <p>shellyakiyama@gmail.com </p>
+        
+        <div class="content-column" id="contactme">
+          <h3>Contact Me</h3>
+          <p><a href="mailto:shellyakiyama@gmail.com">Send email</a></p>
+          <p>TEL:541-xxx-xxxx
         </div>
         
-      </figure>
       </div>
+    </section>
+
   
   </main>
 
